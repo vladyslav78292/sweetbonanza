@@ -64,7 +64,12 @@ table td {
 
 .content {
   display: flex;
-  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.list_titles {
+  white-space: nowrap;
 }
 
 .content > ul > li > a {
@@ -158,6 +163,11 @@ footer {
   text-decoration: none;
 }
 
+footer > .container {
+  justify-content: center;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .container {
       width:750px
@@ -173,5 +183,11 @@ footer {
 @media (min-width: 1200px) {
   .container {
       width:1170px
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
   }
 }
