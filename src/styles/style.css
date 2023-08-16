@@ -83,6 +83,7 @@ table td {
 h2, h3, h4 {
   font-size: 28px;
   color: #3a3a3a;
+  text-align: center;
   font-weight: 700;
 }
 
@@ -304,6 +305,10 @@ li::marker {
 
 .section__paragraph--first {
   margin-top: 0px;
+}
+
+.smaller_image {
+  width: 40%;
 }
 
 @media (min-width: 768px) {
