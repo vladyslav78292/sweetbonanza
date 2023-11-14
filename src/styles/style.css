@@ -38,6 +38,7 @@ header {
   color: #fc005c;
   line-height: 20px;
   text-decoration: none;
+  white-space: nowrap;
   font-size: 17px;
   padding: 10px 15px;
   font-weight: 400;
@@ -80,7 +81,7 @@ table td {
   list-style-type: none;
 }
 
-h2, h3, h4 {
+ h2, h3, h4 {
   font-size: 28px;
   color: #3a3a3a;
   text-align: center;
@@ -108,7 +109,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 28px;
-  color: #fff;
+  color: #3a3a3a;
   text-align: center;
 }
 
@@ -117,7 +118,7 @@ h1 {
 }
 
 .wrapper {
-  background-image: url('https://sweetbonanza.life/wp-content/uploads/2023/03/sweetbonanza.webp');
+  background-image: url('../images/banner.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -127,6 +128,15 @@ h1 {
   position: relative;
   background-color: #3a3a3a;
   overflow: hidden;
+}
+
+.hypertext {
+  color: #fc005c;
+  text-decoration: none;
+}
+
+.addictional_page {
+  font-size: 200px;
 }
 
 .title_wrapper {
@@ -204,6 +214,7 @@ li::marker {
   display: flex;
   margin: 20px 0;
   gap: 30px;
+  overflow: auto;
   justify-content: space-between;
 }
 
@@ -311,6 +322,23 @@ li::marker {
   width: 40%;
 }
 
+.table_container {
+  overflow-x: auto;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons > a {
+  background-color: #fc005c;
+  padding: 7px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
 @media (min-width: 768px) {
   .container {
       width:750px
@@ -374,6 +402,10 @@ li::marker {
     font-size: 13px;
   }
 
+  .list_titles {
+    white-space: wrap;
+  }
+
   .section__element {
     width: 200px;
     font-size: 16px;
@@ -384,5 +416,14 @@ li::marker {
   .section__list-container {
     flex-direction: column;
     gap: 0px;
+  }
+
+  header {
+    min-height: 120px;
+  }
+
+  .container:first-of-type {
+    gap: 20px;
+    flex-direction: column;
   }
 }
