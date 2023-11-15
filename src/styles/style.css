@@ -130,6 +130,18 @@ h1 {
   overflow: hidden;
 }
 
+.nav_menu a {
+  color: #fc005c;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .hypertext {
   color: #fc005c;
   text-decoration: none;
